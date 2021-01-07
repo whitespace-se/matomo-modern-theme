@@ -1,0 +1,121 @@
+@theme-color-background-base: #fff;
+@theme-color-header-background: #fff;
+@theme-color-header-text: rgb(95, 99, 104);
+@theme-color-borderedControl: #F1F3F4;
+@theme-color-brand: #1967d2;
+
+
+.accessibility-skip-to-content:focus {
+  color: #000;
+  top: 10px;
+}
+
+nav {
+  box-shadow: inset 0 -1px 0 rgba(100,121,143,0.122);
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav,
+nav .nav-wrapper i,
+nav a.sidenav-trigger,
+nav a.sidenav-trigger i {
+  height: 56px;
+  line-height: 32px !important;
+}
+
+nav ul li,
+nav ul li a {
+  border-radius: 2rem;
+  font-size: 14px;
+}
+
+nav ul li {
+  margin-right: 4px;
+}
+
+nav ul a {
+  padding: 3px 12px;
+
+  &:focus {
+    outline: 4px solid transparent !important;
+    border-radius: 2rem;
+    text-decoration: none;
+  }
+  &:active {
+    text-decoration: none;
+  }
+}
+
+nav .brand-logo {
+  position: static;
+}
+
+#root, #standalone {
+  .top_controls {
+    background-color: @theme-color-background-base;
+    margin-bottom: 16px;
+    margin-top: 0;
+    box-shadow: inset 0 -1px 0 rgba(100,121,143,0.122);
+
+    .piwikTopControl {
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+#root, #standalone, .ui-dialog, .ngdialog {
+  .borderedControl {
+    background-color: @theme-color-borderedControl;
+    box-shadow: none;
+    border: none;
+    border-radius: 4px;
+    transition: all 150ms linear;
+    &.expanded,
+    &:hover, &:focus {
+      background-color: @theme-color-background-contrast;
+      box-shadow: 0 1px 1px 0 rgba(65,69,73,0.3),0 1px 3px 1px rgba(65,69,73,0.15);
+    }
+  }
+}
+
+#root #secondNavBar .navbar > li > ul li.active > .menuDropdown,
+#root #secondNavBar .navbar > li > ul li.active > .item {
+  background-color: @theme-color-brand;
+  color: @theme-color-background-base;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.piwikSelector {
+  span.title,
+  a.title {
+    .font-default(13px, 12px);
+    text-transform: none;
+  }
+}
+
+.quick-access {
+  input {
+    background-color: @theme-color-borderedControl !important;
+  }
+}
+
+// Card
+.card {
+  border: 1px solid rgba(100, 121, 143, 0.122);
+  box-shadow: none;
+  border-radius: 4px;
+}
+
+.card .card-content h2.card-title {
+  font-size: 18px;
+  padding-bottom: 8px !important;
+  margin-top: -8px;
+  border-bottom: 1px solid rgba(100, 121, 143, 0.122);
+}
