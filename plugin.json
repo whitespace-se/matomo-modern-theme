@@ -7,8 +7,8 @@
     "matomo": ">=4.0.0-b1,<5.0.0-b1"
   },
   "stylesheet": "stylesheets/main.less",
-  "homepage": "",
-  "license": "MIT",
+  "homepage": "https://whitespace.se",
+  "license": "GPL v3+",
   "keywords": ["White Theme", "White", "Minimalist"],
   "support": {
     "email": "dev@whitespace.se",
