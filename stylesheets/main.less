@@ -110,6 +110,31 @@ nav .button-collapse {
   }
 }
 
+@media all and (min-width: 600px) {
+  #root,
+  #standalone {
+    .top_controls {
+
+      // Zen button
+      .icon.icon-arrowup,
+      .icon.icon-arrowdown {
+        background-color: @theme-color-background-base;
+        border-radius: @white-theme-border-radius;
+        width: 34px;
+        height: 34px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 8px;
+        
+        &:before {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}
+
 @media all and (max-width: 600px) {
   #root .top_controls .quick-access .icon-search {
     top: 26px;
