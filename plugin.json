@@ -1,6 +1,6 @@
 {
   "name": "Modern",
-  "description": "Modern gives the Matomo user interface a minamalist look and feel.",
+  "description": "Modern gives the Matomo user interface a c look and feel.",
   "version": "1.0.0",
   "theme": true,
   "require": {

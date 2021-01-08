@@ -1,3 +1,6 @@
-## Changelog
+# Changelog
 
-Here goes the changelog text.
+## v1.0.0
+
+- Modern - a matomo user interface with a minimalist look and feel.
+- Documentation & screenshots
