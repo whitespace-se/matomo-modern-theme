@@ -1,6 +1,6 @@
 ## FAQ
 
-__How do I install this theme?__
+**How do I install this theme?**
 
 The Modern Theme is available in the official Matomo market place.
 
@@ -9,19 +9,18 @@ The Modern Theme is available in the official Matomo market place.
 - Select "Theme" in the dropdown and search for 'Modern'
 - Activate the theme after installation
 
-__Is the theme active for all Matomo users in my instance?__
+**Is the theme active for all Matomo users in my instance?**
 
 Yes. If you choose this theme for your Matomo instance, all users will see it.
 
-__How long this theme will be maintained ?__
+**How long this theme will be maintained ?**
 
-This theme is maintained by [https://whitespace.se](Whitespace) and will be regularly updated for years to come.
+This theme is maintained by [Whitespace](https://whitespace.se) and will be regularly updated for years to come.
 
-__How can I report issues and give feedback?__
+**How can I report issues and give feedback?**
 
-Please submit an issue on Github, https://github.com/whitespace-se/matomo-modern-theme/issues
+Please submit an issue on Github, [https://github.com/whitespace-se/matomo-modern-theme/issues](https://github.com/whitespace-se/matomo-modern-theme/issues)
 
-__How can I support the developers of this theme?__
+**How can I support the developers of this theme?**
 
 - Write a review to help others discover the theme.
-- Donate money. All donations are forwarded to Swedish charities of our choice.  
