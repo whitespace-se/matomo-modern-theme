@@ -4,7 +4,7 @@
 @theme-color-borderedControl: #f1f3f4;
 @theme-color-brand: #0c51af;
 
-@white-theme-grey: rgba(100, 121, 143, 0.122);
+@white-theme-grey: rgba(100, 121, 143, 0.222);
 @white-theme-border-radius: 4px;
 @white-theme-border-radius-nav: 2em;
 
@@ -118,7 +118,9 @@ nav .button-collapse {
       // Zen button
       .icon.icon-arrowup,
       .icon.icon-arrowdown {
-        background-color: @theme-color-background-base;
+        background-color: @theme-color-header-background;
+        box-shadow: none;
+        border: 1px solid @white-theme-grey;
         border-radius: @white-theme-border-radius;
         width: 34px;
         height: 34px;
@@ -126,7 +128,13 @@ nav .button-collapse {
         align-items: center;
         justify-content: center;
         margin-top: 8px;
-        
+        cursor: pointer;
+        transition: all 150ms linear;
+        &:hover,
+        &:focus {
+          background-color: @theme-color-background-contrast;
+          box-shadow: 0 2px 13px 0 rgba(65, 69, 73, 0.053), 0 1px 4px 0px rgba(65, 69, 73, 0.15);
+        }
         &:before {
           padding-top: 0;
         }
@@ -154,17 +162,16 @@ nav .button-collapse {
 .ui-dialog,
 .ngdialog {
   .borderedControl {
-    background-color: @theme-color-borderedControl;
+    background-color: @theme-color-header-background;
     box-shadow: none;
-    border: none;
+    border: 1px solid @white-theme-grey;
     border-radius: @white-theme-border-radius;
     transition: all 150ms linear;
     &.expanded,
     &:hover,
     &:focus {
       background-color: @theme-color-background-contrast;
-      box-shadow: 0 1px 1px 0 rgba(65, 69, 73, 0.3),
-        0 1px 3px 1px rgba(65, 69, 73, 0.15);
+      box-shadow: 0 2px 13px 0 rgba(65, 69, 73, 0.053), 0 1px 4px 0px rgba(65, 69, 73, 0.15);
     }
   }
 }
@@ -195,7 +202,7 @@ nav .button-collapse {
 
 .quick-access {
   input {
-    background-color: @theme-color-borderedControl !important;
+    background-color: @theme-color-header-background !important;
   }
 }
 
@@ -205,10 +212,17 @@ nav .button-collapse {
   border: 1px solid @white-theme-grey !important;
   box-shadow: none;
   border-radius: @white-theme-border-radius;
+  overflow: hidden;
 }
 
 .widget .card {
   border: 0 !important;
+}
+
+.widget:hover,
+.widget:focus {
+  transition: all 150ms linear;
+  box-shadow: 0 2px 13px 0 rgba(65, 69, 73, 0.053), 0 1px 4px 0px rgba(65, 69, 73, 0.15);
 }
 
 .card .card-content h2.card-title,
@@ -227,12 +241,6 @@ nav .button-collapse {
   margin-left: 20px;
   margin-right: 20px;
   padding-left: 0 !important;
-}
-
-
-// Tables
-.theWidgetContent .card .card-content table.dataTable th,
-table.dataTable th,
-table.subDataTable th {
-  background-color: @theme-color-header-background !important;
+  padding-bottom: 15px !important;
+  padding-top: 18px !important;
 }
