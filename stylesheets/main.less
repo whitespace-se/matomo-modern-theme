@@ -41,9 +41,6 @@ body:not(#loginPage) nav {
     padding-top: 2px;
   }
 
-  body:not(#loginPage) nav {
-    margin-bottom: 16px;
-  }
 }
 
 @media all and (min-width: 992px) {
@@ -109,6 +106,20 @@ nav .button-collapse {
     .piwikTopControl {
       margin-top: 8px;
       margin-bottom: 8px;
+    }
+  }
+}
+
+@media all and (max-width: 600px) {
+  #root .top_controls .quick-access .icon-search {
+    top: 26px;
+  }
+
+  #root,
+  #standalone {
+    .top_controls {
+      padding-top: 16px;
+      padding-bottom: 4px;
     }
   }
 }
