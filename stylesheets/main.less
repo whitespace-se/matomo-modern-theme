@@ -1,12 +1,15 @@
-@theme-color-background-base: #f4f4f4;
+@theme-color-background-base: #f5f7F9; 
 @theme-color-header-background: #fff;
-@theme-color-header-text: rgb(95, 99, 104);
+@theme-color-header-text:#2c353e;
 @theme-color-borderedControl: #f1f3f4;
 @theme-color-brand: #0c51af;
 
-@white-theme-grey: rgba(100, 121, 143, 0.222);
+@white-theme-grey: #Eee4e8;
 @white-theme-border-radius: 4px;
 @white-theme-border-radius-nav: 2em;
+
+
+#24292e
 
 *:focus {
   outline: 4px solid transparent !important;
@@ -35,12 +38,18 @@ body:not(#loginPage) nav {
   padding-top: 2px;
 }
 
-@media all and (max-width: 992px) {
+nav ul li.active {
+  background-color: @theme-color-brand !important;
 
+  a {
+    color: @theme-color-header-background !important;
+  }
+}
+
+@media all and (max-width: 992px) {
   #loginPage #logo {
     padding-top: 2px;
   }
-
 }
 
 @media all and (min-width: 992px) {
