@@ -268,3 +268,42 @@ nav .button-collapse {
   padding-left: 1rem !important;
   padding-right: 1rem !important;
 }
+
+// System Notifications
+.system.notification {
+  box-shadow: none;
+
+  &.notification-success {
+    .alert-success;
+    color: #fff !important;
+    background-color: #22863a;
+    &:before, p, a {
+      color: #fff;
+    }
+  }
+  &.notification-warning {
+    .alert-warning;
+    background-color: #f27d04;
+    color: #fff !important;
+    &:before, p, a {
+      color: #fff;
+    }
+  }
+  &.notification-danger,
+  &.notification-error {
+    .alert-danger;
+    color: #fff !important;
+    background-color: #d73a4a;
+    &:before, p, a {
+      color: #fff;
+    }
+  }
+  &.notification-info {
+    .alert-info;
+    color: #fff !important;
+    background-color: #0075ca;
+    &:before, p, a {
+      color: #fff;
+    }
+  }
+}
