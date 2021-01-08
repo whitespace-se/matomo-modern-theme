@@ -8,6 +8,20 @@
 @white-theme-border-radius: 4px;
 @white-theme-border-radius-nav: 2em;
 
+*:focus {
+  outline: 4px solid transparent !important;
+  box-shadow: inset 0 0 0 2px @theme-color-brand;
+}
+
+*:focus:not(:focus-visible) {
+  box-shadow: inset 0 0 0 2px transparent;
+}
+
+*:focus-visible {
+  outline: 4px solid transparent !important;
+  box-shadow: inset 0 0 0 2px @theme-color-brand;
+}
+
 .accessibility-skip-to-content:focus {
   color: #000;
   top: 10px;
@@ -166,6 +180,7 @@ nav .button-collapse {
   font-size: 18px;
   padding-bottom: 8px !important;
   border-bottom: 1px solid @white-theme-grey;
+  font-weight: 500;
 }
 
 .card .card-content h2.card-title {
@@ -176,4 +191,12 @@ nav .button-collapse {
   margin-left: 20px;
   margin-right: 20px;
   padding-left: 0 !important;
+}
+
+
+// Tables
+.theWidgetContent .card .card-content table.dataTable th,
+table.dataTable th,
+table.subDataTable th {
+  background-color: @theme-color-header-background !important;
 }
