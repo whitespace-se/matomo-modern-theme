@@ -7,11 +7,11 @@
  *
  */
 
-namespace Piwik\Plugins\WhiteTheme;
+namespace Piwik\Plugins\ModernTheme;
 
 use Piwik\Plugin;
 
-class WhiteTheme extends Plugin
+class ModernTheme extends Plugin
 {
     public function registerEvents()
     {

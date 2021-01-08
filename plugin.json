@@ -1,7 +1,7 @@
 {
-  "name": "WhiteTheme",
-  "description": "A minimalist white theme for Matomo.",
-  "version": "0.1.0",
+  "name": "Modern",
+  "description": "Modern gives the Matomo user interface a minamalist look and feel.",
+  "version": "1.0.0",
   "theme": true,
   "require": {
     "matomo": ">=4.0.0-b1,<5.0.0-b1"
@@ -9,15 +9,15 @@
   "stylesheet": "stylesheets/main.less",
   "homepage": "https://whitespace.se",
   "license": "GPL v3+",
-  "keywords": ["White Theme", "White", "Minimalist"],
+  "keywords": ["Modern", "Light", "Accessibility", "Minimalist"],
   "support": {
     "email": "dev@whitespace.se",
-    "issues": "https://github.com/whitespace-se/WhiteTheme/issues",
-    "source": "https://github.com/whitespace-se/WhiteTheme"
+    "issues": "https://github.com/whitespace-se/matomo-modern-theme/issues",
+    "source": "https://github.com/whitespace-se/matomo-modern-themes  "
   },
   "authors": [
     {
-      "name": "Whitespace AB",
+      "name": "Whitespace",
       "email": "dev@whitespace.se",
       "homepage": "https://whitespace.se"
     }
