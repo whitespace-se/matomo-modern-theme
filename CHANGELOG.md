@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.0.2s
+
+- Update icon paths
+- Update theme documentation
+
 ## v1.0.1
 
 - Update theme documentation

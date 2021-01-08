@@ -23,4 +23,4 @@ Please submit an issue on Github, [https://github.com/whitespace-se/matomo-moder
 
 **How can I support the developers of this theme?**
 
-- Write a review to help others discover the theme.
+Write a review to help others discover the theme.

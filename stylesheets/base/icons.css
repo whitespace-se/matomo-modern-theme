@@ -1,9 +1,10 @@
 @font-face {
   font-family: 'matomo';
   src:
-    url('plugins/WhiteTheme/fonts/matomo.ttf?70exlr') format('truetype'),
-    url('plugins/WhiteTheme/fonts/matomo.woff?70exlr') format('woff'),
-    url('plugins/WhiteTheme/fonts/matomo.svg?70exlr#matomo') format('svg');
+    url('plugins/Modern/fonts/matomo.woff2?70exlr') format('woff2'),
+    url('plugins/Modern/fonts/matomo.ttf?70exlr') format('truetype'),
+    url('plugins/Modern/fonts/matomo.woff?70exlr') format('woff'),
+    url('plugins/Modern/fonts/matomo.svg?70exlr#matomo') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
