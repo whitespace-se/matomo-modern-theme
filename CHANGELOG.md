@@ -1,6 +1,10 @@
 # Changelog
 
-## v1.0.2s
+## v1.0.3
+
+- Update screenshot names
+
+## v1.0.2
 
 - Update icon paths
 - Update theme documentation
