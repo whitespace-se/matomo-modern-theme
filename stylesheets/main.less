@@ -13,18 +13,32 @@
   top: 10px;
 }
 
-nav {
+body:not(#loginPage) nav {
   box-shadow: inset 0 -1px 0 @white-theme-grey;
 }
 
+#root #logo {
+  padding-top: 2px;
+}
+
 @media all and (max-width: 992px) {
-  nav {
+
+  #loginPage #logo {
+    padding-top: 2px;
+  }
+
+  body:not(#loginPage) nav {
     margin-bottom: 16px;
   }
 }
 
 @media all and (min-width: 992px) {
-  .nav-wrapper {
+
+  #loginPage #logo {
+    padding-top: 12px;
+  }
+
+  body:not(#loginPage) .nav-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -61,7 +75,7 @@ nav {
     }
   }
 
-  nav .brand-logo {
+  body:not(#loginPage) nav .brand-logo {
     position: static;
   }
 }
