@@ -1,4 +1,4 @@
-@theme-color-background-base: #fff;
+@theme-color-background-base: #f4f4f4;
 @theme-color-header-background: #fff;
 @theme-color-header-text: rgb(95, 99, 104);
 @theme-color-borderedControl: #f1f3f4;
@@ -73,7 +73,7 @@ nav .button-collapse {
 #root,
 #standalone {
   .top_controls {
-    background-color: @theme-color-background-base;
+    background-color: @theme-color-header-background;
     margin-bottom: 16px;
     margin-top: 0;
     box-shadow: inset 0 -1px 0 @white-theme-grey;
@@ -103,6 +103,10 @@ nav .button-collapse {
         0 1px 3px 1px rgba(65, 69, 73, 0.15);
     }
   }
+}
+
+#root #secondNavBar {
+  background-color: @theme-color-background-base;
 }
 
 #root #secondNavBar .navbar > li > ul li.active > .menuDropdown,
