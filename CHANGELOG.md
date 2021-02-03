@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.4
+
+- Design for new new collapsable settings menu
+
 ## v1.0.3
 
 - Update screenshot names
