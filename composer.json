@@ -1,0 +1,27 @@
+{
+  "name": "whitespace-se/matomo-modern-theme",
+  "description": "Modern gives the Matomo user interface a minimalist look and feel.",
+  "keywords": [
+    "piwik",
+    "matomo",
+    "web",
+    "analytics",
+    "theme",
+    "Modern",
+    "Light",
+    "Accessibility",
+    "Minimalist"
+  ],
+  "type": "piwik-plugin",
+  "homepage": "https://whitespace.se",
+  "license": "GPL-3.0+",
+  "authors": [
+    {
+      "name": "Whitespace Dev",
+      "email": "code@whitespace.se"
+    }
+  ],
+  "require": {
+    "php": ">=7.2.5"
+  }
+}
