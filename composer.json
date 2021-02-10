@@ -23,5 +23,8 @@
   ],
   "require": {
     "php": ">=7.2.5"
+  },
+  "extra": {
+    "installer-name": "Modern"
   }
 }
