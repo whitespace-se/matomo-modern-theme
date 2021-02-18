@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.5
+
+- Minor design fixes - colors for buttons
+
 ## v1.0.4
 
 - Design for new new collapsable settings menu
