@@ -229,7 +229,11 @@ nav .button-collapse {
   border: 1px solid @white-theme-grey !important;
   box-shadow: none;
   border-radius: @white-theme-border-radius;
-  overflow: hidden;
+}
+
+.widget .widgetTop {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 .widget .card {
@@ -338,4 +342,9 @@ nav .button-collapse {
 
 #root #secondNavBar .collapsible-header {
   background-color: transparent !important;
+}
+
+/* Fix overlapping arrow */
+.piwik-paged-users-list table#manageUsersTable .select-wrapper {
+  width: auto;
 }
