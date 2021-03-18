@@ -13,7 +13,7 @@ The Modern Theme is available in the official Matomo market place.
 
 Yes. If you choose this theme for your Matomo instance, all users will see it.
 
-**How long this theme will be maintained ?**
+**How long will this theme will be maintained ?**
 
 This theme is maintained by [Whitespace](https://whitespace.se) and will be regularly updated for years to come.
 

@@ -17,8 +17,9 @@
   "license": "GPL-3.0+",
   "authors": [
     {
-      "name": "Whitespace Dev",
-      "email": "code@whitespace.se"
+      "name": "Whitespace",
+      "email": "code@whitespace.se",
+      "homepage": "https://whitespace.se"
     }
   ],
   "require": {
