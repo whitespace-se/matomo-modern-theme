@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.0.6
+
+- Bug: dropdown not visible in Manage access view, Firefox
+- Monospace font for Custom HTML textarea in Tag Manager
+
 ## v1.0.5
 
 - Minor design fixes - colors for buttons
