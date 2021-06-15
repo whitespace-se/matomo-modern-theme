@@ -1,5 +1,8 @@
 # Changelog
 
+## v1.0.7
+
+- Bug: Segment name cut off
 ## v1.0.6
 
 - Bug: dropdown not visible in Manage access view, Firefox
