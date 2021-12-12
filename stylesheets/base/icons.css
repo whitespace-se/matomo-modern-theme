@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'matomo';
   src:
-    url('plugins/Modern/fonts/matomo.woff2?70exlr') format('woff2'),
-    url('plugins/Modern/fonts/matomo.ttf?70exlr') format('truetype'),
-    url('plugins/Modern/fonts/matomo.woff?70exlr') format('woff'),
-    url('plugins/Modern/fonts/matomo.svg?70exlr#matomo') format('svg');
+          url('plugins/Morpheus/fonts/matomo.woff2?rjeutj') format('woff2'),
+          url('plugins/Morpheus/fonts/matomo.woff?rjeutj') format('woff'),
+          url('plugins/Morpheus/fonts/matomo.ttf?rjeutj') format('truetype'),
+          url('plugins/Morpheus/fonts/matomo.svg?rjeutj#matomo') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -387,4 +387,10 @@
 }
 .icon-page-performance:before {
   content: "\e9a6";
+}
+.icon-clock:before {
+  content: "\e901";
+}
+.icon-heart:before{
+  content: "\e9da";
 }

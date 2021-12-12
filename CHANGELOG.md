@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.9
+
+- Add new icons
+- Add new css variables
 ## v1.0.8
 
 - Bug: Matomo 4.4.1, second navbar, colors

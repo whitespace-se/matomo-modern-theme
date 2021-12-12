@@ -7,10 +7,10 @@
     "web",
     "analytics",
     "theme",
-    "Modern",
-    "Light",
-    "Accessibility",
-    "Minimalist"
+    "modern",
+    "light",
+    "accessibility",
+    "minimalist"
   ],
   "type": "piwik-plugin",
   "homepage": "https://whitespace.se",
