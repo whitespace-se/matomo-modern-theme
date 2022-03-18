@@ -2,11 +2,11 @@
 
 **How do I install this theme?**
 
-The Modern Theme is available in the official Matomo market place.
+The Dark Mode Theme is available in the official Matomo market place.
 
 - Log into the user interface of your Matomo installation
 - Look for the Marketplace section
-- Select "Theme" in the dropdown and search for 'Modern'
+- Select "Theme" in the dropdown and search for 'Dark Mode'
 - Activate the theme after installation
 
 **Is the theme active for all Matomo users in my instance?**
@@ -19,7 +19,7 @@ This theme is maintained by [Whitespace](https://whitespace.se) and will be regu
 
 **How can I report issues and give feedback?**
 
-Please submit an issue on Github, [https://github.com/whitespace-se/matomo-modern-theme/issues](https://github.com/whitespace-se/matomo-modern-theme/issues)
+Please submit an issue on Github, [https://github.com/whitespace-se/matomo-dark-mode-theme/issues](https://github.com/whitespace-se/matomo-dark-mode-theme/issues)
 
 **How can I support the developers of this theme?**
 
