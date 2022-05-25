@@ -1,5 +1,5 @@
 {
-  "name": "Dark Mode",
+  "name": "DarkMode",
   "description": "Dark Mode gives the Matomo user interface a minimalist look and feel.",
   "version": "1.0.9",
   "theme": true,
