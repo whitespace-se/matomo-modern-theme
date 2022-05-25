@@ -1,0 +1,34 @@
+/*
+ * Body, general
+ */
+
+body {
+  color: @theme-color-text;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: @darkmode-color-always-black;
+}
+
+*:focus {
+  outline: 4px solid transparent !important;
+  box-shadow: inset 0 0 0 2px @theme-color-brand;
+}
+
+*:focus:not(:focus-visible) {
+  box-shadow: inset 0 0 0 2px transparent;
+}
+
+*:focus-visible {
+  outline: 4px solid transparent !important;
+  box-shadow: inset 0 0 0 2px @theme-color-brand;
+}
+
+.accessibility-skip-to-content:focus {
+  color: @darkmode-color-always-black;
+  top: 10px;
+}

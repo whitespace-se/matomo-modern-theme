@@ -6,7 +6,7 @@
   "require": {
     "matomo": ">=4.0.0-b1,<5.0.0-b1"
   },
-  "stylesheet": "stylesheets/main.less",
+  "stylesheet": "stylesheets/theme.less",
   "homepage": "https://whitespace.se/matomo/",
   "license": "GPL v3+",
   "keywords": ["Dark Mode", "Light", "Accessibility", "Minimalist"],

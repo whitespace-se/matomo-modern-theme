@@ -1,0 +1,61 @@
+/*
+ * Cards, Tabs and Widgets
+ */
+.card,
+.tabs,
+.widget {
+  background-color: @theme-color-header-background;
+}
+
+.card,
+.widget {
+  border: 1px solid @darkmode-color-border !important;
+  box-shadow: none;
+  border-radius: @darkmode-border-radius;
+}
+
+.widget {
+  .card {
+    border: 0 !important;
+  }
+
+  .widgetTop {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+
+  &:hover,
+  &:focus {
+    transition: all 150ms linear;
+    box-shadow: 0 2px 13px 0 rgba(65, 69, 73, 0.053),
+      0 1px 4px 0px rgba(65, 69, 73, 0.15);
+  }
+}
+
+.card .card-content h2.card-title,
+.widget h3.widgetName {
+  font-size: 18px;
+  padding-bottom: 8px !important;
+  border-bottom: 1px solid @darkmode-color-border;
+  font-weight: 500;
+}
+
+.card .card-content h2.card-title {
+  margin-top: -8px;
+}
+
+.widget h3.widgetName {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 0 !important;
+  padding-bottom: 15px !important;
+  padding-top: 18px !important;
+}
+
+/*
+  * Widgets
+  */
+// .ui-widget-content {
+//   background: @theme-color-header-background;
+//   color: @theme-color-header-text;
+// }

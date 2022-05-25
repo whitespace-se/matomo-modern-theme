@@ -1,0 +1,74 @@
+/*
+ * Button, tables etc
+ */
+.tableActionBar button,
+.tableActionBar a,
+.btn {
+  box-shadow: none !important;
+  text-transform: none !important;
+  font-size: 14px !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+table.dataTable tr:not(.subDataTableContainer) td {
+  background-color: @theme-color-header-background;
+  border-bottom: 1px solid @darkmode-color-border !important;
+}
+
+hr {
+  border-top-color: @darkmode-color-border;
+}
+
+/*
+ * Misc
+ */
+
+.marketplace .plugin .footer .purchaseable {
+  background-color: @theme-color-brand !important;
+}
+
+.piwikSelector {
+  span.title,
+  a.title {
+    .font-default(13px, 15px);
+    text-transform: none;
+  }
+}
+
+.quick-access {
+  input {
+    background-color: @theme-color-header-background !important;
+  }
+}
+
+.rss-content,
+.rss-description {
+  color: inherit;
+}
+
+pre,
+.codeblock,
+textarea#customHtml {
+  font-family: monospace, monospace;
+  font-size: 13px;
+  color: @darkmode-color-codeblock;
+  background-color: @darkmode-color-codeblock-background;
+  border: solid 1px @darkmode-color-border;
+  border-radius: 3px;
+  direction: ltr;
+  text-align: left;
+  height: auto;
+  display: block;
+  width: 100%;
+  padding: 1rem;
+}
+
+/* Fix overlapping arrow */
+.piwik-paged-users-list table#manageUsersTable .select-wrapper {
+  width: auto;
+}
+
+table.dataTable tr:not(.subDataTableContainer):hover td:not(.cellSubDataTable) {
+  background-color: @theme-color-background-contrast;
+}

@@ -50,5 +50,7 @@ class DarkModeTheme extends Plugin
         $vars->colorCode = 'var(--theme-color-code)';
         $vars->colorCodeBackground = 'var(--theme-color-code-background)';
         $vars->colorWidgetBackground = 'var(--theme-color-widget-background)';
+        $vars->colorWidgetBorder = 'var(--theme-color-widget-border)';
+        $vars->colorCustomHeaderBackground = 'green';
     }
 }

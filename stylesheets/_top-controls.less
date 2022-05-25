@@ -1,0 +1,89 @@
+/*
+ * Top controls
+ */
+#root,
+#standalone {
+  .top_controls {
+    background-color: @theme-color-header-background;
+    margin-bottom: 16px;
+    margin-top: 0;
+    box-shadow: inset 0 -1px 0 @darkmode-color-border;
+
+    .piwikTopControl {
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+@media all and (min-width: 600px) {
+  #root,
+  #standalone {
+    .top_controls {
+      // Zen button
+      .icon.icon-arrowup,
+      .icon.icon-arrowdown {
+        background-color: @theme-color-header-background;
+        box-shadow: none;
+        border: 1px solid @darkmode-color-border;
+        border-radius: @white-theme-border-radius;
+        width: 36px;
+        height: 36px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 8px;
+        cursor: pointer;
+        transition: all 150ms linear;
+        &:hover,
+        &:focus {
+          background-color: @theme-color-background-contrast;
+          box-shadow: 0 2px 13px 0 rgba(65, 69, 73, 0.053),
+            0 1px 4px 0px rgba(65, 69, 73, 0.15);
+        }
+        &:before {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 600px) {
+  #root .top_controls .quick-access .icon-search {
+    top: 26px;
+  }
+
+  #root,
+  #standalone {
+    .top_controls {
+      padding-top: 16px;
+      padding-bottom: 4px;
+    }
+  }
+}
+
+#root,
+#standalone,
+.ui-dialog,
+.ngdialog {
+  .borderedControl {
+    background-color: @theme-color-header-background;
+    box-shadow: none;
+    border: 1px solid @darkmode-color-border;
+    border-radius: @white-theme-border-radius;
+    transition: all 150ms linear;
+    &.expanded,
+    &:hover,
+    &:focus {
+      background-color: @theme-color-background-contrast;
+      box-shadow: 0 2px 13px 0 rgba(65, 69, 73, 0.053),
+        0 1px 4px 0px rgba(65, 69, 73, 0.15);
+    }
+  }
+}
+
+#root .top_controls .quick-access input {
+  border-radius: @white-theme-border-radius !important;
+  height: 36px;
+}
