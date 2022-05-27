@@ -1,36 +1,4 @@
-// @theme-fontFamily-base: Arial, Verdana, sans-serif;
-
-// @theme-color-brand: #5793d4;
-// @theme-color-background-base: #d9e0e3;
-// @theme-color-header-background: #0091ea;
-// @theme-color-header-text: #0d0d0d;
-
-// @theme-color-widget-title-background: #80d8ff;
-// @theme-color-widget-title-text: #01579b;
-
-// @theme-color-menu-contrast-text: #0091ea;
-// @theme-color-menu-contrast-textActive: #006064;
-// @theme-color-menu-contrast-textSelected: #00838f;
-// @theme-color-menu-contrast-background: #e1f5fe;
-
 /*
-@theme-color-brand:                    #d4291f;
-@theme-color-brand-contrast:           rgb(255,255,255);
-
-@theme-color-widget-title-text:        #0d0d0d;
-@theme-color-widget-title-background:  #f2f2f2;
-
-@theme-color-menu-contrast-text:       #666666;
-@theme-color-menu-contrast-textActive: #0d0d0d;
-@theme-color-menu-contrast-textSelected: @theme-color-menu-contrast-text;
-@theme-color-menu-contrast-background: #f2f2f2;
-
-@theme-color-text:                     #0d0d0d;
-@theme-color-text-light:               #444444;
-@theme-color-text-lighter:             #666666;
-@theme-color-link:                     #1e93d1;
-
-@theme-color-background-base:          #fff;
 @theme-color-background-tinyContrast:  #f2f2f2;
 @theme-color-background-lowContrast:   #cccccc;
 @theme-color-background-contrast:      #5F5A60;
@@ -50,30 +18,30 @@
 :root {
   --theme-color-brand: rgb(12, 81, 175);
   --theme-color-brand-contrast: rgb(255, 255, 255);
-  --theme-color-text: #212121;
-  --theme-color-text-light: #444;
+  --theme-color-text: rgb(33, 33, 33);
+  --theme-color-text-light: rgb(68,68,68);
   --theme-color-text-lighter: rgb(102, 102, 102);
-  --theme-color-text-contrast: #37474f;
-  --theme-color-link: rgb(204, 204, 204);
-  --theme-color-base-series: #ee3024;
-  --theme-color-headline-alternative: #4e4e4e;
+  --theme-color-text-contrast: rgb(55, 71, 79);
+  --theme-color-link: rgb(25, 118, 210);
+  --theme-color-base-series: rgb(238, 48, 36);
+  --theme-color-headline-alternative: rgb(55, 55, 55);
   --theme-color-header-background: rgb(255, 255, 255);
   --theme-color-header-text: rgb(255, 255, 255);
   --theme-color-menu-contrast-text: var(--theme-color-text);
-  --theme-color-menu-contrast-text-selected: #212121;
-  --theme-color-menu-contrast-text-active: #3450a3;
-  --theme-color-menu-contrast-background: #f5f7f9;
-  --theme-color-widget-exported-background-base: blue;
+  --theme-color-menu-contrast-text-selected: rgb(33,33,33);
+  --theme-color-menu-contrast-text-active: rgb(25, 118, 210);
+  --theme-color-menu-contrast-background: rgb(245, 247, 249);
+  --theme-color-widget-exported-background-base: rgb(255, 255, 255);
   --theme-color-widget-title-text: var(--theme-color-text);
   --theme-color-widget-title-background: var(--theme-color-header-background);
-  --theme-color-background-base: #f5f7f9;
+  --theme-color-background-base: rgb(245, 247, 249);
   --theme-color-background-tiny-contrast: var(
     --theme-color-background-base
-  ); // #f2f2f2;
+  ); 
   --theme-color-background-low-contrast: var(
     --theme-color-background-base
-  ); //#d9d9d9;
-  --theme-color-background-contrast: var(--theme-color-background-base);
+  );
+  --theme-color-background-contrast: rgb(255, 255, 255);
   --theme-color-background-high-contrast: rgb(32, 32, 32);
   --theme-color-border: rgb(204, 204, 204);
   --theme-color-code: rgb(243, 243, 243);
@@ -97,25 +65,6 @@
   --darkmode-color-header-active-link: rgb(255, 255, 255);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --theme-color-background-base: rgb(13, 17, 23);
-    --theme-color-menu-contrast-background: rgb(13, 17, 23);
-    --theme-color-header-background: rgb(22, 27, 34);
-    --theme-color-widget-background: rgb(22, 27, 34);
-    --theme-color-header-text: rgb(255, 255, 255);
-    --theme-color-menu-contrast-text-selected: rgb(255, 255, 255);
-    --theme-color-text: rgb(201, 209, 217);
-    // --theme-color-background-contrast: rgb(13, 17, 23);
-    // Custom
-    --darkmode-color-border: rgb(48, 54, 61);
-    --darkmode-color-codeblock: rgb(255, 255, 255);
-    --darkmode-color-codeblock-background: rgb(13, 17, 23);
-    --darkmode-color-header-active-link: rgb(255, 255, 255);
-    --darkmode-color-header-background: rgb(13, 17, 23);
-  }
-}
-
 @darkmode-color-always-black: var(--darkmode-color-always-black);
 @darkmode-color-border: var(--darkmode-color-border);
 @darkmode-color-codeblock: var(--darkmode-color-codeblock);
@@ -124,7 +73,7 @@
 );
 @darkmode-color-header-active-link: var(--darkmode-color-header-active-link);
 @darkmode-color-header-background: var(--darkmode-color-header-background);
-@darkmode-border-radius: var(--white-theme-border-radius);
+@darkmode-border-radius: var(--darkmode-border-radius);
 @darkmode-border-radius-nav: var(--darkmode-border-radius-nav);
 
 // Notifications
@@ -133,8 +82,12 @@
 @darkmode-color-success: var(--darkmode-color-success);
 @darkmode-color-warning: var(--darkmode-color-warning);
 
-// @import "./_general.less";
+@import "_general.less";
 @import "_header.less";
 @import "_secondnav.less";
 @import "_widgets.less";
 @import "_notifications.less";
+@import "_top-controls.less";
+@import "_misc.less";
+@import "_forms.less";
+@import "_collection.less";

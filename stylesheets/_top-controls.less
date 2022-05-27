@@ -4,7 +4,7 @@
 #root,
 #standalone {
   .top_controls {
-    background-color: @theme-color-header-background;
+    background-color: @darkmode-color-header-background;
     margin-bottom: 16px;
     margin-top: 0;
     box-shadow: inset 0 -1px 0 @darkmode-color-border;
@@ -13,7 +13,16 @@
       margin-top: 8px;
       margin-bottom: 8px;
     }
+
+    .piwikSelector {
+      span.title,
+      a.title {
+        .font-default(13px, 15px);
+        text-transform: none;
+      }
+    }
   }
+  
 }
 
 @media all and (min-width: 600px) {
@@ -26,9 +35,9 @@
         background-color: @theme-color-header-background;
         box-shadow: none;
         border: 1px solid @darkmode-color-border;
-        border-radius: @white-theme-border-radius;
-        width: 36px;
-        height: 36px;
+        border-radius: @darkmode-border-radius;
+        width: 38px;
+        height: 38px;
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -71,7 +80,7 @@
     background-color: @theme-color-header-background;
     box-shadow: none;
     border: 1px solid @darkmode-color-border;
-    border-radius: @white-theme-border-radius;
+    border-radius: @darkmode-border-radius;
     transition: all 150ms linear;
     &.expanded,
     &:hover,
@@ -84,6 +93,6 @@
 }
 
 #root .top_controls .quick-access input {
-  border-radius: @white-theme-border-radius !important;
+  border-radius: @darkmode-border-radius !important;
   height: 36px;
 }
