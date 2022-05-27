@@ -6,13 +6,13 @@
  * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  */
 
-namespace Piwik\Plugins\DarkMode;
+namespace Piwik\Plugins\Modern;
 
 use Piwik\Settings\Setting;
 use Piwik\Settings\FieldConfig;
 
 /**
- * Defines Settings for DarkMode.
+ * Defines Settings for Modern.
  */
 class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
 {
@@ -24,13 +24,13 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
 
     protected function init()
     {
-        $this->modernDarkMode = $this->createModernDarkModeSetting();
+        $this->modernDarkMode = $this->createModernModernSetting();
         $this->modernDarkMode->setIsWritableByCurrentUser(false);
         // $this->modernHeaderBackgroundColor = $this->createModernHeaderBackgroundColorSetting();
         // $this->modernHeaderBackgroundColor->setIsWritableByCurrentUser(false);
     }
 
-    private function createModernDarkModeSetting()
+    private function createModernModernSetting()
     {
         return $this->makeSetting('modernDarkMode', true, FieldConfig::TYPE_BOOL, function (FieldConfig $field) {
             $field->title = 'Dark mode';

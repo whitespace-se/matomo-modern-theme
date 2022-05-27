@@ -1,6 +1,6 @@
 {
   "name": "whitespace-se/matomo-dark-mode-theme",
-  "description": "Dark Mode gives the Matomo user interface a minimalist look and feel.",
+  "description": "Modern gives the Matomo user interface a minimalist look and feel.",
   "keywords": [
     "piwik",
     "matomo",
@@ -26,6 +26,6 @@
     "php": ">=7.2.5"
   },
   "extra": {
-    "installer-name": "DarkMode"
+    "installer-name": "Modern"
   }
 }

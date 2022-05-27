@@ -2,11 +2,11 @@
 
 **How do I install this theme?**
 
-The Dark Mode Theme is available in the official Matomo market place.
+The Modern Theme is available in the official Matomo market place.
 
 - Log into the user interface of your Matomo installation
 - Look for the Marketplace section
-- Select "Theme" in the dropdown and search for 'Dark Mode'
+- Select "Theme" in the dropdown and search for 'Modern'
 - Activate the theme after installation
 
 **Is the theme active for all Matomo users in my instance?**
