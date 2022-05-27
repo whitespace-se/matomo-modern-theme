@@ -7,11 +7,11 @@
  *
  */
 
-namespace Piwik\Plugins\DarkMode;
+namespace Piwik\Plugins\Modern;
 
 use Piwik\Plugin;
 
-class DarkMode extends Plugin
+class Modern extends Plugin
 {
     public function registerEvents()
     {
@@ -55,7 +55,7 @@ class DarkMode extends Plugin
     }
 
     public function addStylesheets(&$mergedContent) {
-        $settings = new \Piwik\Plugins\DarkMode\SystemSettings();
+        $settings = new \Piwik\Plugins\Modern\SystemSettings();
         
         $darkMode = $settings->modernDarkMode->getValue();
         if($darkMode) {

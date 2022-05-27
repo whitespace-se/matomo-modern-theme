@@ -1,14 +1,14 @@
-# Dark Mode
+# Modern
 
 ## Description
 
-Dark Mode gives the Matomo interface a minimalist design with an updated colour scheme.
+Modern gives the Matomo interface a minimalist design with an updated colour scheme.
 
-Dark Mode makes it easier than ever to stay on brand. The white header means that you can simply upload your organisation’s logo – without clashing with the original Matomo header colour.
+Modern makes it easier than ever to stay on brand. The white header means that you can simply upload your organisation’s logo – without clashing with the original Matomo header colour.
 
 The design is focused on usability and accessibility. Colours are selected to maintain a good contrast ratio. The navigation design is updated to improve focus on the main content. Support for keyboard navigation is enhanced, compared to the default Matomo interface.
 
-Dark Mode is maintained by usability and accessibility specialists at the [Whitespace agency](https://whitespace.se).
+Modern is maintained by usability and accessibility specialists at the [Whitespace agency](https://whitespace.se).
 
 ## Whitespace & Matomo
 

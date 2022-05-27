@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.0.0
+
+- Add dark mode & setting to disable dark mode
+- Add css variables for all themVariables
+- Refactored all less code
+- Replace all HEX colors with rgb
 ## v1.0.9
 
 - Add new icons
@@ -39,5 +45,5 @@
 
 ## v1.0.0
 
-- Dark Mode - a matomo user interface with a minimalist look and feel.
+- Modern - a matomo user interface with a minimalist look and feel.
 - Documentation & screenshots
