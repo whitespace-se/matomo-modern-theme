@@ -55,36 +55,42 @@ class DarkMode extends Plugin
     }
 
     public function addStylesheets(&$mergedContent) {
-        $darkMode = "
-        @media (prefers-color-scheme: dark) {
-            :root {
-              --theme-color-background-base: rgb(22, 27, 34);
-              --theme-color-background-contrast: rgb(22, 27, 34);
-              --theme-color-text-contrast: rgb(201, 209, 217);
-              --theme-color-menu-contrast-background: rgb(13, 17, 23);
-              --theme-color-headline-alternative: rgb(201, 209, 217);
-              --theme-color-header-background: rgb(22, 27, 34);
-              --theme-color-widget-background: rgb(22, 27, 34);
-              --theme-color-header-text: rgb(255, 255, 255);
-              --theme-color-menu-contrast-text-selected: rgb(255, 255, 255);
-              --theme-color-text: rgb(201, 209, 217);
-              // Custom
-              --darkmode-color-border: rgb(48, 54, 61);
-              --darkmode-color-codeblock: rgb(255, 255, 255);
-              --darkmode-color-codeblock-background: rgb(13, 17, 23);
-              --darkmode-color-header-active-link: rgb(255, 255, 255);
-              --darkmode-color-header-background: rgb(13, 17, 23);
+        $settings = new \Piwik\Plugins\DarkMode\SystemSettings();
+        
+        $darkMode = $settings->modernDarkMode->getValue();
+        if($darkMode) {
+            $mergedContent .= "
+            @media (prefers-color-scheme: dark) {
+                :root {
+                --theme-color-background-base: rgb(22, 27, 34);
+                --theme-color-background-contrast: rgb(22, 27, 34);
+                --theme-color-text-contrast: rgb(201, 209, 217);
+                --theme-color-menu-contrast-background: rgb(13, 17, 23);
+                --theme-color-headline-alternative: rgb(201, 209, 217);
+                --theme-color-header-background: rgb(22, 27, 34);
+                --theme-color-widget-background: rgb(22, 27, 34);
+                --theme-color-header-text: rgb(255, 255, 255);
+                --theme-color-menu-contrast-text-selected: rgb(255, 255, 255);
+                --theme-color-text: rgb(201, 209, 217);
+                // Custom
+                --darkmode-color-border: rgb(48, 54, 61);
+                --darkmode-color-codeblock: rgb(255, 255, 255);
+                --darkmode-color-codeblock-background: rgb(13, 17, 23);
+                --darkmode-color-header-active-link: rgb(255, 255, 255);
+                --darkmode-color-header-background: rgb(13, 17, 23);
+                }
             }
-          }
-          ";
+            ";
+        }
 
-        $customHeader = "
-        body:not(#loginPage) nav {
-            background-color: orange !important;
-        }   
-        ";
-
-        $mergedContent = $mergedContent . $darkMode . $customHeader;
+        // $headerBackgroundColor = $settings->modernHeaderBackgroundColor->getValue();
+        // if($headerBackgroundColor !== '') {
+        //     $mergedContent .= "
+        //     body:not(#loginPage) nav {
+        //         background-color: $headerBackgroundColor !important;
+        //     }
+        //     ";
+        // }
     }
     
 }
