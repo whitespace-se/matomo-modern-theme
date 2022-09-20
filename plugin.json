@@ -1,19 +1,19 @@
 {
   "name": "Modern",
   "description": "Modern gives the Matomo user interface a minimalist look and feel.",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "theme": true,
   "require": {
     "matomo": ">=4.0.0-b1,<5.0.0-b1"
   },
-  "stylesheet": "stylesheets/main.less",
+  "stylesheet": "stylesheets/theme.less",
   "homepage": "https://whitespace.se/matomo/",
   "license": "GPL v3+",
   "keywords": ["Modern", "Light", "Accessibility", "Minimalist"],
   "support": {
     "email": "code@whitespace.se",
-    "issues": "https://github.com/whitespace-se/matomo-modern-theme/issues",
-    "source": "https://github.com/whitespace-se/matomo-modern-theme"
+    "issues": "https://github.com/whitespace-se/matomo-dark-mode-theme/issues",
+    "source": "https://github.com/whitespace-se/matomo-dark-mode-theme"
   },
   "authors": [
     {

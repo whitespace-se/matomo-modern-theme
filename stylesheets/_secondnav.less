@@ -1,0 +1,25 @@
+/*
+ * Second nav
+ */
+#root #secondNavBar {
+  //   background-color: @theme-color-background-base;
+  background-color: transparent !important;
+
+  .collapsible {
+    box-shadow: none !important;
+  }
+
+  .collapsible-header {
+    background-color: transparent !important;
+  }
+
+  .navbar > li > ul {
+    li.active > .menuDropdown,
+    li.active > .item {
+      //   color: @theme-color-text;
+      background-color: @darkmode-color-header-background;
+      border-top-right-radius: @darkmode-border-radius;
+      border-bottom-right-radius: @darkmode-border-radius;
+    }
+  }
+}

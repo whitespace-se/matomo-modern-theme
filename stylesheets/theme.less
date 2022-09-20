@@ -1,0 +1,93 @@
+/*
+@theme-color-background-tinyContrast:  #f2f2f2;
+@theme-color-background-lowContrast:   #cccccc;
+@theme-color-background-contrast:      #5F5A60;
+@theme-color-background-highContrast:  #202020;
+@theme-color-base-series:              #ee3024;
+
+@graph-colors-data-series1: #d4291f;
+@graph-colors-data-series2: #1f78b4;
+@graph-colors-data-series3: #ff7f00;
+@graph-colors-data-series4: #33a02c;
+@graph-colors-data-series5: #6a3d9a;
+@graph-colors-data-series6: #b15928;
+@graph-colors-data-series7: #fdbf6f;
+@graph-colors-data-series8: #cab2d6;
+*/
+
+:root {
+  --theme-color-brand: rgb(12, 81, 175);
+  --theme-color-brand-contrast: rgb(255, 255, 255);
+  --theme-color-text: rgb(33, 33, 33);
+  --theme-color-text-light: rgb(68,68,68);
+  --theme-color-text-lighter: rgb(102, 102, 102);
+  --theme-color-text-contrast: rgb(55, 71, 79);
+  --theme-color-link: rgb(25, 118, 210);
+  --theme-color-base-series: rgb(238, 48, 36);
+  --theme-color-headline-alternative: rgb(55, 55, 55);
+  --theme-color-header-background: rgb(255, 255, 255);
+  --theme-color-header-text: rgb(255, 255, 255);
+  --theme-color-menu-contrast-text: var(--theme-color-text);
+  --theme-color-menu-contrast-text-selected: rgb(33,33,33);
+  --theme-color-menu-contrast-text-active: rgb(25, 118, 210);
+  --theme-color-menu-contrast-background: rgb(245, 247, 249);
+  --theme-color-widget-exported-background-base: rgb(255, 255, 255);
+  --theme-color-widget-title-text: var(--theme-color-text);
+  --theme-color-widget-title-background: var(--theme-color-header-background);
+  --theme-color-background-base: rgb(245, 247, 249);
+  --theme-color-background-tiny-contrast: var(
+    --theme-color-background-base
+  ); 
+  --theme-color-background-low-contrast: var(
+    --theme-color-background-base
+  );
+  --theme-color-background-contrast: rgb(255, 255, 255);
+  --theme-color-background-high-contrast: rgb(32, 32, 32);
+  --theme-color-border: rgb(204, 204, 204);
+  --theme-color-code: rgb(243, 243, 243);
+  --theme-color-code-background: rgb(22, 22, 22);
+  --theme-color-widget-background: rgb(255, 255, 255);
+  --theme-color-header-text: rgb(44, 53, 62);
+  // Config
+  --darkmode-border-radius: 4px;
+  --darkmode-border-radius-nav: 2em;
+  // Custom - colors
+  --darkmode-color-danger: rgb(215, 58, 74);
+  --darkmode-color-info: rgb(0, 117, 202);
+  --darkmode-color-success: rgb(34, 134, 58);
+  --darkmode-color-warning: rgb(242, 125, 4);
+  // Custom - various
+  --darkmode-color-always-black: rgb(0, 0, 0);
+  --darkmode-color-border: rgb(238, 228, 232);
+  --darkmode-color-codeblock: rgb(255, 255, 255);
+  --darkmode-color-codeblock-background: rgb(13, 17, 23);
+  --darkmode-color-header-background: rgb(255, 255, 255);
+  --darkmode-color-header-active-link: rgb(255, 255, 255);
+}
+
+@darkmode-color-always-black: var(--darkmode-color-always-black);
+@darkmode-color-border: var(--darkmode-color-border);
+@darkmode-color-codeblock: var(--darkmode-color-codeblock);
+@darkmode-color-codeblock-background: var(
+  --darkmode-color-codeblock-background
+);
+@darkmode-color-header-active-link: var(--darkmode-color-header-active-link);
+@darkmode-color-header-background: var(--darkmode-color-header-background);
+@darkmode-border-radius: var(--darkmode-border-radius);
+@darkmode-border-radius-nav: var(--darkmode-border-radius-nav);
+
+// Notifications
+@darkmode-color-info: var(--darkmode-color-info);
+@darkmode-color-danger: var(--darkmode-color-danger);
+@darkmode-color-success: var(--darkmode-color-success);
+@darkmode-color-warning: var(--darkmode-color-warning);
+
+@import "_general.less";
+@import "_header.less";
+@import "_secondnav.less";
+@import "_widgets.less";
+@import "_notifications.less";
+@import "_top-controls.less";
+@import "_misc.less";
+@import "_forms.less";
+@import "_collection.less";
