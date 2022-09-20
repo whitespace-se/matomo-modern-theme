@@ -57,10 +57,14 @@ class Modern extends Plugin
     public function addStylesheets(&$mergedContent) {
         $settings = new \Piwik\Plugins\Modern\SystemSettings();
         
+        // Dark mode: Automatic, dark or light
         $darkMode = $settings->modernDarkMode->getValue();
-        if($darkMode) {
+        if($darkMode === 0){
             $mergedContent .= "
-            @media (prefers-color-scheme: dark) {
+            @media (prefers-color-scheme: dark) {";
+        }
+        if($darkMode === 0 || $darkMode === 1){
+            $mergedContent .= "
                 :root {
                 --theme-color-background-base: rgb(22, 27, 34);
                 --theme-color-background-contrast: rgb(22, 27, 34);
@@ -78,19 +82,24 @@ class Modern extends Plugin
                 --darkmode-color-codeblock-background: rgb(13, 17, 23);
                 --darkmode-color-header-active-link: rgb(255, 255, 255);
                 --darkmode-color-header-background: rgb(13, 17, 23);
-                }
+                }";
+        }
+        if($darkMode === 0) {
+            $mergedContent .= "
             }
             ";
         }
 
-        // $headerBackgroundColor = $settings->modernHeaderBackgroundColor->getValue();
-        // if($headerBackgroundColor !== '') {
-        //     $mergedContent .= "
-        //     body:not(#loginPage) nav {
-        //         background-color: $headerBackgroundColor !important;
-        //     }
-        //     ";
-        // }
+        // Set header background color
+        $headerBackgroundColor = $settings->modernHeaderBackgroundColor->getValue();
+        if($headerBackgroundColor !== '') {
+            $mergedContent .= "
+            body:not(#loginPage) nav {
+                background-color: $headerBackgroundColor !important;
+                box-shadow: none;
+            }
+            ";
+        }
     }
     
 }

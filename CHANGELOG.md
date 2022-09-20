@@ -1,11 +1,13 @@
 # Changelog
 
-## v2.0.0
+## v1.1.0
 
 - Add dark mode & setting to disable dark mode
+- Add option for custom header background
 - Add css variables for all themVariables
 - Refactored all less code
 - Replace all HEX colors with rgb
+
 ## v1.0.9
 
 - Add new icons
