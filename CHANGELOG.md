@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.1.1
+
+- Add documentation
+
 ## v1.1.0
 
 - Add dark mode & setting to disable dark mode
