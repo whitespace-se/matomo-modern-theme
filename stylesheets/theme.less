@@ -58,21 +58,25 @@
   --darkmode-color-warning: rgb(242, 125, 4);
   // Custom - various
   --darkmode-color-always-black: rgb(0, 0, 0);
+  --darkmode-color-always-white: rgb(255, 255, 255);
   --darkmode-color-border: rgb(238, 228, 232);
   --darkmode-color-codeblock: rgb(255, 255, 255);
   --darkmode-color-codeblock-background: rgb(13, 17, 23);
   --darkmode-color-header-background: rgb(255, 255, 255);
   --darkmode-color-header-active-link: rgb(255, 255, 255);
+  --darkmode-color-hover: rgb(238, 238, 238);
 }
 
 @darkmode-color-always-black: var(--darkmode-color-always-black);
+@darkmode-color-always-white: var(--darkmode-color-always-white);
 @darkmode-color-border: var(--darkmode-color-border);
 @darkmode-color-codeblock: var(--darkmode-color-codeblock);
 @darkmode-color-codeblock-background: var(
   --darkmode-color-codeblock-background
 );
-@darkmode-color-header-active-link: var(--darkmode-color-header-active-link);
 @darkmode-color-header-background: var(--darkmode-color-header-background);
+@darkmode-color-header-active-link: var(--darkmode-color-header-active-link);
+@darkmode-color-hover: var(--darkmode-color-hover);
 @darkmode-border-radius: var(--darkmode-border-radius);
 @darkmode-border-radius-nav: var(--darkmode-border-radius-nav);
 
@@ -91,3 +95,5 @@
 @import "_misc.less";
 @import "_forms.less";
 @import "_collection.less";
+@import "_visualisations.less";
+@import "_override.less";

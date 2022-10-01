@@ -82,6 +82,7 @@ class Modern extends Plugin
                 --darkmode-color-codeblock-background: rgb(13, 17, 23);
                 --darkmode-color-header-active-link: rgb(255, 255, 255);
                 --darkmode-color-header-background: rgb(13, 17, 23);
+                --darkmode-color-hover: rgb(13, 17, 23);
                 }";
         }
         if($darkMode === 0) {
