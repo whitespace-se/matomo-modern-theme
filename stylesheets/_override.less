@@ -1,0 +1,68 @@
+/* 
+ * The following overrides can be seen as "fixes"
+ * We intend to find a better general solution
+ */
+
+/* Inactive plugins */
+#plugins {
+    .inactive-plugin:hover {
+        td {
+            background-color: rgba(230, 
+            230, 
+            230, 
+            0.3);
+        }
+    }
+}
+
+/* Disabled labels */
+input:not([type]):disabled+label, 
+input:not([type])[readonly="readonly"]+label, 
+input[type=text]:not(.browser-default):disabled+label, 
+input[type=text]:not(.browser-default)[readonly="readonly"]+label, 
+input[type=password]:not(.browser-default):disabled+label, 
+input[type=password]:not(.browser-default)[readonly="readonly"]+label, 
+input[type=email]:not(.browser-default):disabled+label, 
+input[type=email]:not(.browser-default)[readonly="readonly"]+label, 
+input[type=url]:not(.browser-default):disabled+label, 
+input[type=url]:not(.browser-default)[readonly="readonly"]+label, 
+input[type=time]:not(.browser-default):disabled+label, 
+input[type=time]:not(.browser-default)[readonly="readonly"]+label, 
+input[type=date]:not(.browser-default):disabled+label, 
+input[type=date]:not(.browser-default)[readonly="readonly"]+label, 
+input[type=datetime]:not(.browser-default):disabled+label, 
+input[type=datetime]:not(.browser-default)[readonly="readonly"]+label, 
+input[type=datetime-local]:not(.browser-default):disabled+label, 
+input[type=datetime-local]:not(.browser-default)[readonly="readonly"]+label, 
+input[type=tel]:not(.browser-default):disabled+label, 
+input[type=tel]:not(.browser-default)[readonly="readonly"]+label, 
+input[type=number]:not(.browser-default):disabled+label, 
+input[type=number]:not(.browser-default)[readonly="readonly"]+label, 
+input[type=search]:not(.browser-default):disabled+label, 
+input[type=search]:not(.browser-default)[readonly="readonly"]+label, 
+textarea.materialize-textarea:disabled+label, 
+textarea.materialize-textarea[readonly="readonly"]+label {
+    color: @theme-color-text-light;
+}
+
+/* Realtime */
+#visitsLive {
+    .datetime {
+        background-color: @darkmode-color-hover;
+        border-color: @theme-color-border;
+    }
+}
+
+#widgetLivewidget .visitorLogIcons {
+    display: inline-block;
+    background: @theme-color-background-base;
+    padding: 0 0 5px 5px;
+}
+
+/* Site selector */
+.siteSelector {
+    .custom_select_ul_list li a:hover, 
+    .custom_select_all a:hover {
+        background-color: @darkmode-color-hover;
+    }
+}
