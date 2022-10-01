@@ -76,12 +76,13 @@ body:not(#loginPage) nav {
         font-size: 14px;
         padding: 3px 12px;
 
+        &:active {
+          text-decoration: none;
+        }
+
         &:focus {
           outline: 4px solid transparent !important;
           border-radius: @darkmode-border-radius-nav;
-          text-decoration: none;
-        }
-        &:active {
           text-decoration: none;
         }
 
