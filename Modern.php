@@ -68,6 +68,7 @@ class Modern extends Plugin
                 :root {
                 --theme-color-background-base: rgb(22, 27, 34);
                 --theme-color-background-contrast: rgb(22, 27, 34);
+                --theme-color-background-high-contrast: rgb(48, 54, 61);
                 --theme-color-text-contrast: rgb(201, 209, 217);
                 --theme-color-menu-contrast-background: rgb(13, 17, 23);
                 --theme-color-headline-alternative: rgb(201, 209, 217);
@@ -84,6 +85,13 @@ class Modern extends Plugin
                 --darkmode-color-header-background: rgb(13, 17, 23);
                 --darkmode-color-hover: rgb(13, 17, 23);
                 }";
+            
+            $mergedContent .= "
+                div.sparkline img,
+                table.dataTable td.label img {
+                    filter: invert(100%) hue-rotate(180deg);
+                }
+                ";
         }
         if($darkMode === 0) {
             $mergedContent .= "
