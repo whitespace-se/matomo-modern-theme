@@ -8,9 +8,11 @@
 
 namespace Piwik\Plugins\Modern;
 
+use Piwik\AssetManager;
 use Piwik\Container\StaticContainer;
-use Piwik\Settings\Setting;
 use Piwik\Settings\FieldConfig;
+use Piwik\Settings\Setting;
+use Piwik\View;
 
 /**
  * Defines Settings for Modern.
@@ -40,11 +42,6 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
             $field->availableValues = array('0' => 'Automatic',
                                             '1' => 'Dark theme',
                                             '2' => 'Light theme');
-            $field->validate = function ($value, $setting) {
-                // Clear cache
-                $cache = StaticContainer::get('Matomo\Cache\Transient');
-                $cache->delete('cssCacheBusterId');
-            };
         });
     }
 
@@ -61,11 +58,17 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
                         throw new \Exception("Value $value is invalid");
                     }
                 }
-
-                // Clear cache
-                $cache = StaticContainer::get('Matomo\Cache\Transient');
-                $cache->delete('cssCacheBusterId');
             };
         });
+    }
+
+    public function save()
+    {
+        parent::save();
+        // Clear cache
+        StaticContainer::get('Matomo\Cache\Transient')->delete('cssCacheBusterId');;
+        AssetManager::getInstance()->removeMergedAssets($pluginName);
+        View::clearCompiledTemplates();
+        // Filesystem::deleteAllCacheOnUpdate();
     }
 }
