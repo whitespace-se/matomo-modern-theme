@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.1.3
+
+- Dark mode for visualisations & sparklines
+- Minor dark mode adjustments
+## v1.1.2
+
+- Minor dark mode adjustments
+
 ## v1.1.1
 
 - Add documentation
