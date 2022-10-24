@@ -4,6 +4,7 @@
 
 - Dark mode for visualisations & sparklines
 - Minor dark mode adjustments
+
 ## v1.1.2
 
 - Minor dark mode adjustments
@@ -24,6 +25,7 @@
 
 - Add new icons
 - Add new css variables
+
 ## v1.0.8
 
 - Bug: Matomo 4.4.1, second navbar, colors
@@ -31,6 +33,7 @@
 ## v1.0.7
 
 - Bug: Segment name cut off
+
 ## v1.0.6
 
 - Bug: dropdown not visible in Manage access view, Firefox
