@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.1.4
+
+- Realtime view
+- Visits log
+- Visits over time, contrast problem. Grey text on black background
+- Information about what every report contain, the user need to click on the exclamation mark beside the report
+- Segment menu
+
 ## v1.1.3
 
 - Dark mode for visualisations & sparklines

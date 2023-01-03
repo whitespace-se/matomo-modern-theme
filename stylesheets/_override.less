@@ -47,6 +47,8 @@ textarea.materialize-textarea[readonly="readonly"]+label {
 
 /* Realtime */
 #visitsLive {
+    color: @theme-color-text;
+
     .datetime {
         background-color: @darkmode-color-hover;
         border-color: @theme-color-border;
@@ -70,4 +72,42 @@ textarea.materialize-textarea[readonly="readonly"]+label {
 /* Dropdown */
 .dropdown-content {
     background-color: @theme-color-background-contrast;
+}
+
+/* Datatable */
+.dataTableFooterIcons .inactiveIcon:hover {
+    background: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    .visitorDetails .visitorLogIconWithDetails:last-child img {
+        filter: invert(100%) hue-rotate(180deg);
+    }
+
+    .visitor-profile-devices img {
+        filter: invert(100%) hue-rotate(180deg);
+    }
+
+    // jqplot
+    .jqplot-axis canvas {
+        filter: invert(100%) hue-rotate(180deg);
+    }
+
+    // Rating icons
+    .ratingIcons img {
+        filter: invert(100%) hue-rotate(180deg);
+    }
+
+    // Hover
+    .limitSelection > div .select-wrapper:hover {
+        background: none;
+    }
+
+    .UserCountryMap_map svg path {
+        filter: invert(100%) hue-rotate(180deg);
+    }
+
+    .dataTableFooterIcons img {
+        filter: invert(100%) hue-rotate(180deg);
+    }
 }
