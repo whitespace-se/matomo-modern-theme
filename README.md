@@ -14,7 +14,7 @@ Modern is maintained by usability and accessibility specialists at the [Whitespa
 
 ## Dark mode
 
-![Dark mode](https://github.com/whitespace-se/matomo-modern-theme/blob/master/screenshots/2_dark_mode.png?raw=true)
+![Dark mode](https://github.com/whitespace-se/matomo-modern-theme/blob/main/screenshots/2_dark_mode.png?raw=true)
 
 We added dark mode as an option from version 1.1.0.
 
@@ -22,7 +22,7 @@ You can select the **Dark** or **Light** appearance as a default option, or make
 
 ## Custom header background colour
 
-![Custom background colour](https://github.com/whitespace-se/matomo-modern-theme/blob/master/screenshots/3_custom_background_color.png?raw=true)
+![Custom background colour](https://github.com/whitespace-se/matomo-modern-theme/blob/main/screenshots/3_custom_background_color.png?raw=true)
 
 We added this configuraton as an option from version 1.1.0.
 
@@ -32,7 +32,7 @@ This can be particularly useful for dev/staging environments where you want to c
 
 ## Options
 
-![Modern options](https://github.com/whitespace-se/matomo-modern-theme/blob/master/screenshots/4_options.png?raw=true)
+![Modern options](https://github.com/whitespace-se/matomo-modern-theme/blob/main/screenshots/4_options.png?raw=true)
 
 Edit the options from Administration > System > General Settings
 
