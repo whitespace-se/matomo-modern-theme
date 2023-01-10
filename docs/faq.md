@@ -19,7 +19,7 @@ This theme is maintained by [Whitespace](https://whitespace.se) and will be regu
 
 **How can I report issues and give feedback?**
 
-Please submit an issue on Github, [https://github.com/whitespace-se/matomo-dark-mode-theme/issues](https://github.com/whitespace-se/matomo-dark-mode-theme/issues)
+Please submit an issue on Github, [https://github.com/whitespace-se/matomo-modern-theme/issues](https://github.com/whitespace-se/matomo-modern-theme/issues)
 
 **How can I support the developers of this theme?**
 
