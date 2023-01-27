@@ -87,9 +87,9 @@ class Modern extends Plugin
                 }";
             
             $mergedContent .= "
-                div.sparkline img,
-                table.dataTable td.label img {
+                div.sparkline img {
                     filter: invert(100%) hue-rotate(180deg);
+                    background-color: unset;
                 }
                 ";
         }
