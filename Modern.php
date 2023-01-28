@@ -85,13 +85,6 @@ class Modern extends Plugin
                 --darkmode-color-header-background: rgb(13, 17, 23);
                 --darkmode-color-hover: rgb(13, 17, 23);
                 }";
-            
-            $mergedContent .= "
-                div.sparkline img {
-                    filter: invert(100%) hue-rotate(180deg);
-                    background-color: unset;
-                }
-                ";
         }
         if($darkMode === 0) {
             $mergedContent .= "

@@ -5,114 +5,117 @@
 
 /* Inactive plugins */
 #plugins {
-    .inactive-plugin:hover {
-        td {
-            background-color: rgba(230, 
-            230, 
-            230, 
-            0.3);
-        }
+  .inactive-plugin:hover {
+    td {
+      background-color: rgba(230, 230, 230, 0.3);
     }
+  }
 }
 
 /* Disabled labels */
-input:not([type]):disabled+label, 
-input:not([type])[readonly="readonly"]+label, 
-input[type=text]:not(.browser-default):disabled+label, 
-input[type=text]:not(.browser-default)[readonly="readonly"]+label, 
-input[type=password]:not(.browser-default):disabled+label, 
-input[type=password]:not(.browser-default)[readonly="readonly"]+label, 
-input[type=email]:not(.browser-default):disabled+label, 
-input[type=email]:not(.browser-default)[readonly="readonly"]+label, 
-input[type=url]:not(.browser-default):disabled+label, 
-input[type=url]:not(.browser-default)[readonly="readonly"]+label, 
-input[type=time]:not(.browser-default):disabled+label, 
-input[type=time]:not(.browser-default)[readonly="readonly"]+label, 
-input[type=date]:not(.browser-default):disabled+label, 
-input[type=date]:not(.browser-default)[readonly="readonly"]+label, 
-input[type=datetime]:not(.browser-default):disabled+label, 
-input[type=datetime]:not(.browser-default)[readonly="readonly"]+label, 
-input[type=datetime-local]:not(.browser-default):disabled+label, 
-input[type=datetime-local]:not(.browser-default)[readonly="readonly"]+label, 
-input[type=tel]:not(.browser-default):disabled+label, 
-input[type=tel]:not(.browser-default)[readonly="readonly"]+label, 
-input[type=number]:not(.browser-default):disabled+label, 
-input[type=number]:not(.browser-default)[readonly="readonly"]+label, 
-input[type=search]:not(.browser-default):disabled+label, 
-input[type=search]:not(.browser-default)[readonly="readonly"]+label, 
-textarea.materialize-textarea:disabled+label, 
-textarea.materialize-textarea[readonly="readonly"]+label {
-    color: @theme-color-text-light;
+input:not([type]):disabled + label,
+input:not([type])[readonly="readonly"] + label,
+input[type="text"]:not(.browser-default):disabled + label,
+input[type="text"]:not(.browser-default)[readonly="readonly"] + label,
+input[type="password"]:not(.browser-default):disabled + label,
+input[type="password"]:not(.browser-default)[readonly="readonly"] + label,
+input[type="email"]:not(.browser-default):disabled + label,
+input[type="email"]:not(.browser-default)[readonly="readonly"] + label,
+input[type="url"]:not(.browser-default):disabled + label,
+input[type="url"]:not(.browser-default)[readonly="readonly"] + label,
+input[type="time"]:not(.browser-default):disabled + label,
+input[type="time"]:not(.browser-default)[readonly="readonly"] + label,
+input[type="date"]:not(.browser-default):disabled + label,
+input[type="date"]:not(.browser-default)[readonly="readonly"] + label,
+input[type="datetime"]:not(.browser-default):disabled + label,
+input[type="datetime"]:not(.browser-default)[readonly="readonly"] + label,
+input[type="datetime-local"]:not(.browser-default):disabled + label,
+input[type="datetime-local"]:not(.browser-default)[readonly="readonly"] + label,
+input[type="tel"]:not(.browser-default):disabled + label,
+input[type="tel"]:not(.browser-default)[readonly="readonly"] + label,
+input[type="number"]:not(.browser-default):disabled + label,
+input[type="number"]:not(.browser-default)[readonly="readonly"] + label,
+input[type="search"]:not(.browser-default):disabled + label,
+input[type="search"]:not(.browser-default)[readonly="readonly"] + label,
+textarea.materialize-textarea:disabled + label,
+textarea.materialize-textarea[readonly="readonly"] + label {
+  color: @theme-color-text-light;
 }
 
 /* Realtime */
 #visitsLive {
-    color: @theme-color-text;
+  color: @theme-color-text;
 
-    .datetime {
-        background-color: @darkmode-color-hover;
-        border-color: @theme-color-border;
-    }
+  .datetime {
+    background-color: @darkmode-color-hover;
+    border-color: @theme-color-border;
+  }
 }
 
 #widgetLivewidget .visitorLogIcons {
-    display: inline-block;
-    background: @theme-color-background-base;
-    padding: 0 0 5px 5px;
+  display: inline-block;
+  background: @theme-color-background-base;
+  padding: 0 0 5px 5px;
 }
 
 /* Site selector */
 .siteSelector {
-    .custom_select_ul_list li a:hover, 
-    .custom_select_all a:hover {
-        background-color: @darkmode-color-hover;
-    }
+  .custom_select_ul_list li a:hover,
+  .custom_select_all a:hover {
+    background-color: @darkmode-color-hover;
+  }
 }
 
 /* Dropdown */
 .dropdown-content {
-    background-color: @theme-color-background-contrast;
+  background-color: @theme-color-background-contrast;
 }
 
 /* Datatable */
 .dataTableFooterIcons .inactiveIcon:hover {
-    background: none;
+  background: none;
 }
 
 @media (prefers-color-scheme: dark) {
-    .visitorDetails .visitorLogIconWithDetails:last-child img {
-        filter: invert(100%) hue-rotate(180deg);
-    }
+  .visitorDetails .visitorLogIconWithDetails:last-child img {
+    filter: invert(100%) hue-rotate(180deg);
+  }
 
-    .visitor-profile-devices img {
-        filter: invert(100%) hue-rotate(180deg);
-    }
+  .visitor-profile-devices img {
+    filter: invert(100%) hue-rotate(180deg);
+  }
 
-    // jqplot
-    .jqplot-axis canvas {
-        filter: invert(100%) hue-rotate(180deg);
-    }
+  // jqplot
+  .jqplot-axis canvas {
+    filter: invert(100%) hue-rotate(180deg);
+  }
 
-    // Rating icons
-    .ratingIcons img {
-        filter: invert(100%) hue-rotate(180deg);
-    }
+  // Rating icons
+  .ratingIcons img {
+    filter: invert(100%) hue-rotate(180deg);
+  }
 
-    // Hover
-    .limitSelection > div .select-wrapper:hover {
-        background: none;
-    }
+  // Hover
+  .limitSelection > div .select-wrapper:hover {
+    background: none;
+  }
 
-    .UserCountryMap_map svg path {
-        filter: invert(100%) hue-rotate(180deg);
-    }
+  .UserCountryMap_map svg path {
+    filter: invert(100%) hue-rotate(180deg);
+  }
 
-    .dataTableFooterIcons img {
-        filter: invert(100%) hue-rotate(180deg);
-    }
+  .dataTableFooterIcons img {
+    filter: invert(100%) hue-rotate(180deg);
+  }
 
-    // Dashboard
-    .dashboardSettings ul.submenu li {
-        color: inherit;
-    }
+  // Dashboard
+  .dashboardSettings ul.submenu li {
+    color: inherit;
+  }
+
+  // Sparkline
+  div.sparkline img {
+    filter: invert(100%) hue-rotate(180deg);
+    background-color: unset;
+  }
 }
