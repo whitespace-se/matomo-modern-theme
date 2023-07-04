@@ -1,5 +1,8 @@
 # Changelog
 
+## v5.0.0
+
+- Migrate Plugin from Matomo 4.X to Matomo 5
 ## v1.1.5
 
 - Cleanup formatting in less files
