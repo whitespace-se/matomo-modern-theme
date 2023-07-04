@@ -6,8 +6,18 @@ The Modern Theme is available in the official Matomo market place.
 
 - Log into the user interface of your Matomo installation
 - Look for the Marketplace section
-- Select "Theme" in the dropdown and search for 'Modern'
+- Select "Theme" in the dropdown and search for "Modern"
 - Activate the theme after installation
+
+**How do I activate dark mode?**
+
+You can select the **Dark** or **Light** appearance as a default option, or make it change **automatically** with sunset (Light ⇢ Dark) and sunrise (Dark ⇢ Light).
+
+**How do I set custom header background colour?**
+
+Fill in a colour code. HEX, rgb, rgba, hsl and hsla colours are allowed.
+
+This can be particularly useful for dev/staging environments where you want to clearly signal that it's not the production environment.
 
 **Is the theme active for all Matomo users in my instance?**
 
