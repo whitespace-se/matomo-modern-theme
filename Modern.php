@@ -33,7 +33,12 @@ class Modern extends Plugin
         $vars->colorLink = 'var(--theme-color-link)';
         $vars->colorBaseSeries = 'var(--theme-color-base-series)';
         $vars->colorHeadlineAlternative = 'var(--theme-color-headline-alternative)';
-        $vars->colorHeaderBackground = 'var(--theme-color-header-background)';
+
+        // Bugfix for Cohorts plugin and the variable cell_background_color_max
+        // TODO: Add feature request for Cohorts plugin
+        // $vars->colorHeaderBackground = 'var(--theme-color-header-background)';
+        $vars->colorHeaderBackground = '#fff';
+
         $vars->colorHeaderText = 'var(--theme-color-header-text)';
         $vars->colorMenuContrastText = 'var(--theme-color-menu-contrast-text)';
         $vars->colorMenuContrastTextSelected = 'var(--theme-color-menu-contrast-text-selected)';
