@@ -25,12 +25,17 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
     // /** @var Setting */
     public $modernHeaderBackgroundColor;
 
+    // /** external stylesheet Setting */
+    public $modernExtStylesheet;
+
     protected function init()
     {
         $this->modernDarkMode = $this->createModernModernSetting();
         // $this->modernDarkMode->setIsWritableByCurrentUser(false);
         $this->modernHeaderBackgroundColor = $this->createModernHeaderBackgroundColorSetting();
         // $this->modernHeaderBackgroundColor->setIsWritableByCurrentUser(false);
+        $this->modernExtStylesheet = $this->createModernExtStylesheetSetting();
+        // $this->modernExtStylesheet->setIsWritableByCurrentUser(false);
     }
 
     private function createModernModernSetting()
@@ -50,7 +55,7 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
         return $this->makeSetting('modernHeaderBackgroundColor', '', FieldConfig::TYPE_STRING, function (FieldConfig $field) {
             $field->title = 'Header background color';
             $field->uiControl = FieldConfig::UI_CONTROL_TEXT;
-            $field->description = 'Define custom header background color. HEX, rgb, rgba, hsl and hsla colors are allowed.';
+            $field->description = 'Define custom header background color. HEX, rgb, rgba, hsl and hsla colors are allowed. (deprecated, use the External Stylesheet setting instead)';
             $field->validate = function ($value, $setting) {
                 if($value !== "") {
                     preg_match('/^(#(?:[0-9a-f]{2}){2,4}|#[0-9a-f]{3}|(?:rgba?|hsla?)\((?:\d+%?(?:deg|rad|grad|turn)?(?:,|\s)+){2,3}[\s\/]*[\d\.]+%?\))$/', $value, $match);
@@ -59,6 +64,15 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
                     }
                 }
             };
+        });
+    }
+
+    private function createModernExtStylesheetSetting()
+    {
+        return $this->makeSetting('modernExtStylesheet', '', FieldConfig::TYPE_STRING, function (FieldConfig $field) {
+            $field->title = 'External Stylesheet';
+            $field->uiControl = FieldConfig::UI_CONTROL_TEXT;
+            $field->description = 'Path to an external stylesheet, relative to matomo folder (ex ../mystyle.less will load a file outside matomo folder';
         });
     }
 
