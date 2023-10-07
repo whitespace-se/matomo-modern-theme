@@ -61,7 +61,7 @@ class Modern extends Plugin
         $modes = ["auto", "dark", "light"];
         $mergedContent .= 'document.addEventListener("DOMContentLoaded", () => {';
         $mergedContent .= 'document.body.classList.add("modern-theme-' . $modes[$darkMode] . '");';
-        $mergedContent .= '});';
+        $mergedContent .= '}, {once: true});';
     }
 
     public function addStylesheets(&$mergedContent) {
