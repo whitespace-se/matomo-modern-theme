@@ -18,6 +18,7 @@ class Modern extends Plugin
         return [
             'Theme.configureThemeVariables' => 'configureThemeVariables',
             'AssetManager.addStylesheets' => 'addStylesheets',
+            'AssetManager.filterMergedJavaScripts' => 'filterMergedJavaScripts',
         ];
     }
 
@@ -53,6 +54,15 @@ class Modern extends Plugin
         $vars->colorWidgetBackground = 'var(--theme-color-widget-background)';
         $vars->colorWidgetExportedBackgroundBase = 'transparent';
         $vars->colorWidgetBorder = 'var(--theme-color-widget-border)';
+    }
+
+    public function filterMergedJavaScripts(&$mergedContent) {
+        $settings = new \Piwik\Plugins\ModernMod\SystemSettings();
+        $darkMode = $settings->modernDarkMode->getValue();
+        $modes = ["auto", "dark", "light"];
+        $mergedContent .= 'document.addEventListener("DOMContentLoaded", () => {';
+        $mergedContent .= 'document.body.classList.add("modern-theme-' . $modes[$darkMode] . '");';
+        $mergedContent .= '});';
     }
 
     public function addStylesheets(&$mergedContent) {
