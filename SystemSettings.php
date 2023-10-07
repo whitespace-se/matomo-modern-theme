@@ -71,8 +71,8 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
     {
         return $this->makeSetting('modernExtStylesheet', '', FieldConfig::TYPE_STRING, function (FieldConfig $field) {
             $field->title = 'External Stylesheet';
-            $field->uiControl = FieldConfig::UI_CONTROL_TEXT;
-            $field->description = 'Path to an external stylesheet, relative to matomo folder (ex ../mystyle.less will load a file outside matomo folder';
+            $field->uiControl = FieldConfig::UI_CONTROL_TEXTAREA;
+            $field->description = 'Stylesheet to override default values';
         });
     }
 
