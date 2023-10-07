@@ -7,6 +7,7 @@
     "matomo": ">=5.0.0-b1,<6.0.0-b1"
   },
   "stylesheet": "stylesheets/theme.less",
+  "javascript": ["javascripts/theme.js"],
   "homepage": "https://whitespace.se/matomo/",
   "license": "GPL v3+",
   "keywords": ["Modern", "Light", "Accessibility", "Minimalist"],
