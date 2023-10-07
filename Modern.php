@@ -112,6 +112,12 @@ class Modern extends Plugin
             }
             ";
         }
+        
+        // append external stylesheet
+        $extStylesheet = $settings->modernExtStylesheet->getValue();
+        if($extStylesheet !== '' && file_exists(PIWIK_INCLUDE_PATH . "/" . $extStyleSheet)) {
+            $mergedContent .= file_get_contents(PIWIK_INCLUDE_PATH . "/" . $extStylesheet);
+        }
     }
     
 }
