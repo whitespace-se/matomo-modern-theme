@@ -1,9 +1,16 @@
 # Changelog
 
+## v1.1.6
+
+- Update icons
+- Move back to users anchor
+- Cohorts plugin fix
+
 ## v1.1.5
 
 - Cleanup formatting in less files
 - Fix for colors and flags in dark mode
+
 ## v1.1.4
 
 - Realtime view
