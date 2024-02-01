@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.1.7
+
+- Update fonts
+
 ## v1.1.6
 
 - Update icons
