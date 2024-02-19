@@ -1,6 +1,6 @@
 # Changelog
 
-## v5.0.3
+## v5.0.4
 
 - WIP: Widgets integration & loading indicator improvements
 
