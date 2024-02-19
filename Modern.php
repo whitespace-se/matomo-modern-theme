@@ -114,10 +114,10 @@ class Modern extends Plugin
         }
         
         // append external stylesheet
-        $externalStylesheet = $settings->modernExternalStylesheet->getValue();
-        if($externalStylesheet !== '') {
-            $mergedContent .= $externalStylesheet;
-        }
+        // $externalStylesheet = $settings->modernExternalStylesheet->getValue();
+        // if($externalStylesheet !== '') {
+        //     $mergedContent .= $externalStylesheet;
+        // }
     }
     
 }
