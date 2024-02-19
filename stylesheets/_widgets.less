@@ -60,3 +60,33 @@
 .ui-state-default {
   color: @theme-color-header-text !important;
 }
+
+.promoWidget {
+  background-color: transparent;
+}
+
+body.modern-theme-auto.body--dark,
+body.modern-theme-dark {
+  .jqplot-seriespicker {
+    filter: invert();
+  }
+  
+  .jqplot-seriespicker-popover {
+    filter: invert();
+    border-color: var(--theme-color-menu-contrast-background) !important;
+    background-color: var(--theme-color-menu-contrast-background) !important;
+    color: var(--color-widget-title-text) !important;
+  }
+  
+  .realTimeMap_overlay {
+      text-shadow: none;
+  }
+
+  #widgetDevicesDetectiongetType .theWidgetContent .card .card-content table.dataTable img {
+    filter: invert();
+  }
+}
+
+.ui-dialog {
+  max-width: 100%;
+}
