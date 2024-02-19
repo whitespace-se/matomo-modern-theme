@@ -8,11 +8,14 @@
   }
 
   const mediaQueryList = window.matchMedia("(prefers-color-scheme: dark)");
-  document.addEventListener("DOMContentLoaded", () => {
-    bodyUpdateDarkMode(mediaQueryList.matches);
-  }, {once: true})
+  document.addEventListener(
+    "DOMContentLoaded",
+    () => {
+      bodyUpdateDarkMode(mediaQueryList.matches);
+    },
+    { once: true }
+  );
   mediaQueryList.addEventListener("change", (e) => {
     bodyUpdateDarkMode(mediaQueryList.matches);
   });
-
 })();

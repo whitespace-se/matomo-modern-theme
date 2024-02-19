@@ -1,13 +1,12 @@
 {
   "name": "Modern",
   "description": "Modern gives the Matomo user interface a minimalist look and feel. Now also with dark mode and additional options",
-  "version": "5.0.2",
+  "version": "5.0.3",
   "theme": true,
   "require": {
     "matomo": ">=5.0.0-b1,<6.0.0-b1"
   },
   "stylesheet": "stylesheets/theme.less",
-  "javascript": ["javascripts/theme.js"],
   "homepage": "https://whitespace.se/matomo/",
   "license": "GPL v3+",
   "keywords": ["Modern", "Light", "Accessibility", "Minimalist"],

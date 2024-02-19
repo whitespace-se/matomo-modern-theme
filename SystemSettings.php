@@ -26,7 +26,7 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
     public $modernHeaderBackgroundColor;
 
     // /** external stylesheet Setting */
-    public $modernExtStylesheet;
+    public $modernExternalStylesheet;
 
     protected function init()
     {
@@ -34,8 +34,8 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
         // $this->modernDarkMode->setIsWritableByCurrentUser(false);
         $this->modernHeaderBackgroundColor = $this->createModernHeaderBackgroundColorSetting();
         // $this->modernHeaderBackgroundColor->setIsWritableByCurrentUser(false);
-        $this->modernExtStylesheet = $this->createModernExtStylesheetSetting();
-        // $this->modernExtStylesheet->setIsWritableByCurrentUser(false);
+        // $this->modernExternalStylesheet = $this->createModernExternalStylesheetSetting();
+        // $this->modernExternalStylesheet->setIsWritableByCurrentUser(false);
     }
 
     private function createModernModernSetting()
@@ -67,14 +67,14 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
         });
     }
 
-    private function createModernExtStylesheetSetting()
-    {
-        return $this->makeSetting('modernExtStylesheet', '', FieldConfig::TYPE_STRING, function (FieldConfig $field) {
-            $field->title = 'External Stylesheet';
-            $field->uiControl = FieldConfig::UI_CONTROL_TEXTAREA;
-            $field->description = 'Stylesheet to override default values';
-        });
-    }
+    // private function createModernExternalStylesheetSetting()
+    // {
+    //     return $this->makeSetting('modernExternalStylesheet', '', FieldConfig::TYPE_STRING, function (FieldConfig $field) {
+    //         $field->title = 'External Stylesheet';
+    //         $field->uiControl = FieldConfig::UI_CONTROL_TEXTAREA;
+    //         $field->description = 'Stylesheet to override default values';
+    //     });
+    // }
 
     public function save()
     {

@@ -18,7 +18,7 @@ class Modern extends Plugin
         return [
             'Theme.configureThemeVariables' => 'configureThemeVariables',
             'AssetManager.addStylesheets' => 'addStylesheets',
-            'AssetManager.filterMergedJavaScripts' => 'filterMergedJavaScripts',
+            // 'AssetManager.filterMergedJavaScripts' => 'filterMergedJavaScripts',
         ];
     }
 
@@ -55,14 +55,14 @@ class Modern extends Plugin
         $vars->colorWidgetBorder = 'var(--theme-color-widget-border)';
     }
 
-    public function filterMergedJavaScripts(&$mergedContent) {
-        $settings = new \Piwik\Plugins\ModernMod\SystemSettings();
-        $darkMode = $settings->modernDarkMode->getValue();
-        $modes = ["auto", "dark", "light"];
-        $mergedContent .= 'document.addEventListener("DOMContentLoaded", () => {';
-        $mergedContent .= 'document.body.classList.add("modern-theme-' . $modes[$darkMode] . '");';
-        $mergedContent .= '}, {once: true});';
-    }
+    // public function filterMergedJavaScripts(&$mergedContent) {
+    //     $settings = new \Piwik\Plugins\ModernMod\SystemSettings();
+    //     $darkMode = $settings->modernDarkMode->getValue();
+    //     $modes = ["auto", "dark", "light"];
+    //     $mergedContent .= 'document.addEventListener("DOMContentLoaded", () => {';
+    //     $mergedContent .= 'document.body.classList.add("modern-theme-' . $modes[$darkMode] . '");';
+    //     $mergedContent .= '}, {once: true});';
+    // }
 
     public function addStylesheets(&$mergedContent) {
         $settings = new \Piwik\Plugins\Modern\SystemSettings();
@@ -114,9 +114,9 @@ class Modern extends Plugin
         }
         
         // append external stylesheet
-        $extStylesheet = $settings->modernExtStylesheet->getValue();
-        if($extStylesheet !== '') {
-            $mergedContent .= $extStylesheet;
+        $externalStylesheet = $settings->modernExternalStylesheet->getValue();
+        if($externalStylesheet !== '') {
+            $mergedContent .= $externalStylesheet;
         }
     }
     
