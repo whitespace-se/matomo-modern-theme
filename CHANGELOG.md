@@ -1,5 +1,10 @@
 # Changelog
 
+## v5.0.5
+
+- Improve design of notification messages
+- Add cover image
+
 ## v5.0.4
 
 - WIP: Widgets integration & loading indicator improvements
@@ -20,6 +25,7 @@
 
 - Cleanup formatting in less files
 - Fix for colors and flags in dark mode
+
 ## v1.1.4
 
 - Realtime view
