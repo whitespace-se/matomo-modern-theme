@@ -48,7 +48,7 @@ modernHeaderBackgroundColor = "#ff5100"
 
 ### Options for dark mode
 
-- `modernDarkMode = 0` - Make it change *automatically* with sunset (Light ⇢ Dark) and sunrise (Dark ⇢ Light)
+- `modernDarkMode = 0` - Make it change _automatically_ with sunset (Light ⇢ Dark) and sunrise (Dark ⇢ Light)
 - `modernDarkMode = 1` - Only **Dark** mode
 - `modernDarkMode = 2` - Only **Light** mode
 
@@ -62,6 +62,6 @@ modernHeaderBackgroundColor = "#ff5100"
 
 ## Whitespace & Matomo
 
-We offer support for configuration, operation and web analysis with Matomo. The customer list includes 30+ organizations in the public sector - e.g. [The Swedish Tax Agency](https://skatteverket.se/), [The Swedish National Archives](https://riksarkivet.se/), [Uppsala municipality](https://www.uppsala.se/), [Trelleborg Municipality](https://www.trelleborg.se/), [Eslöv municipality](https://eslov.se/), the [Swedish Social Insurance Agency](https://www.forsakringskassan.se/), [Statistics Sweden](https://scb.se/) & [Umeå University](https://www.umu.se).
+We provide support for configuration, operation, and web analytics using Matomo. Our customer portfolio includes over 30 public sector organizations, such as the [Swedish Tax Agency](https://skatteverket.se/), [Swedish National Archives](https://riksarkivet.se/), [Uppsala Municipality](https://www.uppsala.se/), [Trelleborg Municipality](https://www.trelleborg.se/), [Eslöv Municipality](https://eslov.se/), [Swedish Social Insurance Agency](https://www.forsakringskassan.se/), [Statistics Sweden](https://scb.se/), and [Umeå University](https://www.umu.se).
 
-Read about [Whitespace & Matomo](https://whitespace.se/matomo/)
+Learn more about [Whitespace & Matomo](https://whitespace.se/matomo/).
