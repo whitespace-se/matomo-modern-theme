@@ -1,5 +1,9 @@
 # Changelog
 
+## v5.0.6
+
+- Improve design of sidebars in dark mode
+
 ## v5.0.5
 
 - Improve design of notification messages

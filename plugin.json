@@ -1,7 +1,7 @@
 {
   "name": "Modern",
   "description": "Modern gives the Matomo user interface a minimalist look and feel. Now also with dark mode and additional options",
-  "version": "5.0.5",
+  "version": "5.0.6",
   "theme": true,
   "require": {
     "matomo": ">=5.0.0-b1,<6.0.0-b1"
