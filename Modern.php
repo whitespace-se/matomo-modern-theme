@@ -53,6 +53,13 @@ class Modern extends Plugin
         $vars->colorCodeBackground = 'var(--theme-color-code-background)';
         $vars->colorWidgetBackground = 'var(--theme-color-widget-background)';
         $vars->colorWidgetBorder = 'var(--theme-color-widget-border)';
+        
+        $systemSettings = new SystemSettings();
+        $darkMode = $systemSettings->modernDarkMode->getValue();
+        
+        if ($darkMode === 0 || $darkMode === 1) {
+            $vars->hasSVGLogo = "darkmode";
+        }
     }
 
     // public function filterMergedJavaScripts(&$mergedContent) {
