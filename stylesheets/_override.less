@@ -47,7 +47,7 @@ textarea.materialize-textarea[readonly="readonly"] + label {
   color: @theme-color-text;
 
   .datetime {
-    background-color: @darkmode-color-hover;
+    background: @theme-color-background-base;
     border-color: @theme-color-border;
   }
 }
@@ -76,47 +76,31 @@ textarea.materialize-textarea[readonly="readonly"] + label {
   background: none;
 }
 
+// Dark mode image/SVG filters — controlled via CSS variable set by PHP based on user's dark mode setting.
+// --modern-dark-filter is set to invert(100%) hue-rotate(180deg) in dark/auto-dark mode, absent in light mode.
+.visitorDetails .visitorLogIconWithDetails:last-child img,
+.visitor-profile-devices img,
+.jqplot-axis canvas,
+.ratingIcons img,
+.UserCountryMap_map svg path,
+.dataTableFooterIcons img {
+  filter: var(--modern-dark-filter, none);
+}
+
+div.sparkline img {
+  filter: var(--modern-dark-filter, none);
+  background-color: unset;
+}
+
 @media (prefers-color-scheme: dark) {
-  .visitorDetails .visitorLogIconWithDetails:last-child img {
-    filter: invert(100%) hue-rotate(180deg);
-  }
-
-  .visitor-profile-devices img {
-    filter: invert(100%) hue-rotate(180deg);
-  }
-
-  // jqplot
-  .jqplot-axis canvas {
-    filter: invert(100%) hue-rotate(180deg);
-  }
-
-  // Rating icons
-  .ratingIcons img {
-    filter: invert(100%) hue-rotate(180deg);
-  }
-
   // Hover
   .limitSelection > div .select-wrapper:hover {
     background: none;
   }
 
-  .UserCountryMap_map svg path {
-    filter: invert(100%) hue-rotate(180deg);
-  }
-
-  .dataTableFooterIcons img {
-    filter: invert(100%) hue-rotate(180deg);
-  }
-
   // Dashboard
   .dashboardSettings ul.submenu li {
     color: inherit;
-  }
-
-  // Sparkline
-  div.sparkline img {
-    filter: invert(100%) hue-rotate(180deg);
-    background-color: unset;
   }
 }
 

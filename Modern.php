@@ -109,6 +109,7 @@ class Modern extends Plugin
                 --darkmode-color-header-active-link: rgb(255, 255, 255);
                 --darkmode-color-header-background: rgb(13, 17, 23);
                 --darkmode-color-hover: rgb(13, 17, 23);
+                --modern-dark-filter: invert(100%) hue-rotate(180deg);
                 }";
         }
         if($darkMode === 0) {
