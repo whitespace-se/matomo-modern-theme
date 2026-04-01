@@ -1,5 +1,11 @@
 # Changelog
 
+## v5.0.9
+
+- Fix dark mode image and SVG filters to respect the Matomo dark mode setting rather than only the OS preference
+- Fix date range background colour
+- Fix visitor profile background colours
+
 ## v5.0.8
 
 - Minor fixes and improvements
