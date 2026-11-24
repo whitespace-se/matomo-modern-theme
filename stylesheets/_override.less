@@ -60,8 +60,7 @@ textarea.materialize-textarea[readonly="readonly"] + label {
 
 /* Site selector */
 .siteSelector {
-  .custom_select_ul_list li a:hover,
-  .custom_select_all a:hover {
+  .mtm-dropdownPanel__menuLink:hover {
     background-color: @darkmode-color-hover;
   }
 }
@@ -81,7 +80,7 @@ textarea.materialize-textarea[readonly="readonly"] + label {
 .visitorDetails .visitorLogIconWithDetails:last-child img,
 .visitor-profile-devices img,
 .jqplot-axis canvas,
-.ratingIcons img,
+.enrichedHeadline__ratingIcons img,
 .UserCountryMap_map svg path,
 .dataTableFooterIcons img {
   filter: var(--modern-dark-filter, none);
@@ -94,7 +93,7 @@ div.sparkline img {
 
 @media (prefers-color-scheme: dark) {
   // Hover
-  .limitSelection > div .select-wrapper:hover {
+  .limitSelection .mtm-selector__trigger:hover {
     background: none;
   }
 

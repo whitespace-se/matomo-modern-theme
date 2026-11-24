@@ -1,5 +1,10 @@
 # Changelog
 
+## v6.0.0
+
+- Compatibility with Matomo 6 (requires Matomo >= 6.0.0 and PHP >= 8.1)
+- Update selectors for the new Matomo 6 markup (site selector, help panel, rows limit selector, rating icons)
+
 ## v5.0.9
 
 - Fix dark mode image and SVG filters to respect the Matomo dark mode setting rather than only the OS preference
